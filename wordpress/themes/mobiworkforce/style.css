@@ -1,0 +1,350 @@
+/*
+Theme Name: MobiWorkforce
+Theme URI: https://wfhsa.com/new/
+Author: WorkForce Health SA / MobiWorkforce Team
+Author URI: https://wfhsa.com
+Description: Official MobiWorkforce Theme Package for WORKFORCE HEALTH SA Occupational Hygiene & Mining Compliance. Modern dark industrial design, mobile-first responsive audit layout, DMR-compliant inspection displays, and seamless bi-directional synchronization with the Android mobile companion app.
+Version: 1.2.0
+License: Proprietary
+Text Domain: mobiworkforce
+Tags: dark, occupational-hygiene, mining-compliance, mobile-first, responsive, dashboard, custom-logo, editor-style
+*/
+
+:root {
+  --wfhsa-red: #D32F2F;
+  --wfhsa-red-dark: #9A0007;
+  --wfhsa-red-light: #FFCDD2;
+  --wfhsa-orange: #FF6D00;
+  --wfhsa-orange-dark: #E65100;
+  --wfhsa-orange-light: #FFE0B2;
+  --wfhsa-bg: #0F1015;
+  --wfhsa-surface: #171922;
+  --wfhsa-surface-variant: #202330;
+  --wfhsa-border: #2E3244;
+  --wfhsa-text: #F8FAFC;
+  --wfhsa-text-muted: #94A3B8;
+  --wfhsa-green: #10B981;
+  --wfhsa-green-dark: #047857;
+  --wfhsa-amber: #F59E0B;
+  --wfhsa-blue: #3B82F6;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--wfhsa-bg);
+  color: var(--wfhsa-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--wfhsa-orange);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #FFA040;
+  text-decoration: underline;
+}
+
+/* Header & Navigation */
+.wfhsa-header {
+  background-color: var(--wfhsa-surface);
+  border-bottom: 2px solid var(--wfhsa-border);
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+.wfhsa-branding {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.wfhsa-branding img {
+  height: 48px;
+  width: auto;
+  border-radius: var(--radius-sm);
+  display: block;
+}
+
+.wfhsa-title {
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
+.wfhsa-subtitle {
+  font-size: 0.75rem;
+  color: var(--wfhsa-orange);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.wfhsa-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.wfhsa-nav-item {
+  color: var(--wfhsa-text-muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+.wfhsa-nav-item:hover,
+.wfhsa-nav-item.active {
+  color: #FFFFFF;
+  background: var(--wfhsa-surface-variant);
+  text-decoration: none;
+}
+
+/* Main Container */
+.wfhsa-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 28px 20px;
+  flex: 1;
+}
+
+/* Card Components */
+.wfhsa-card {
+  background-color: var(--wfhsa-surface);
+  border: 1px solid var(--wfhsa-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  margin-bottom: 24px;
+}
+
+.wfhsa-card:hover {
+  border-color: #3F455D;
+}
+
+.wfhsa-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--wfhsa-border);
+}
+
+.wfhsa-card-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Buttons (Glove-Friendly Touch Targets >= 48px) */
+.wfhsa-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.1s ease, background 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none !important;
+}
+
+.wfhsa-btn:active {
+  transform: scale(0.98);
+}
+
+.wfhsa-btn-primary {
+  background: linear-gradient(135deg, var(--wfhsa-orange) 0%, var(--wfhsa-orange-dark) 100%);
+  color: #FFFFFF !important;
+  box-shadow: 0 2px 8px rgba(255, 109, 0, 0.4);
+}
+
+.wfhsa-btn-primary:hover {
+  background: linear-gradient(135deg, #FF8024 0%, var(--wfhsa-orange) 100%);
+  box-shadow: 0 4px 14px rgba(255, 109, 0, 0.6);
+}
+
+.wfhsa-btn-danger {
+  background: linear-gradient(135deg, var(--wfhsa-red) 0%, var(--wfhsa-red-dark) 100%);
+  color: #FFFFFF !important;
+}
+
+.wfhsa-btn-danger:hover {
+  background: #E53935;
+}
+
+.wfhsa-btn-success {
+  background: linear-gradient(135deg, var(--wfhsa-green) 0%, var(--wfhsa-green-dark) 100%);
+  color: #FFFFFF !important;
+}
+
+.wfhsa-btn-secondary {
+  background-color: var(--wfhsa-surface-variant);
+  color: var(--wfhsa-text) !important;
+  border: 1px solid var(--wfhsa-border);
+}
+
+.wfhsa-btn-secondary:hover {
+  background-color: #2A2E40;
+  border-color: #4A506B;
+}
+
+/* Badges & Tags */
+.wfhsa-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-green {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--wfhsa-green);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.badge-orange {
+  background: rgba(255, 109, 0, 0.15);
+  color: var(--wfhsa-orange);
+  border: 1px solid rgba(255, 109, 0, 0.4);
+}
+
+.badge-red {
+  background: rgba(211, 47, 47, 0.15);
+  color: #FF5252;
+  border: 1px solid rgba(211, 47, 47, 0.4);
+}
+
+.badge-blue {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--wfhsa-blue);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+/* Metric / Stat Boxes */
+.wfhsa-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.wfhsa-stat-box {
+  background: var(--wfhsa-surface-variant);
+  border: 1px solid var(--wfhsa-border);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wfhsa-stat-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--wfhsa-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.wfhsa-stat-value {
+  font-size: 1.85rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-top: 4px;
+}
+
+/* Compliance Score Dial / Bar */
+.wfhsa-score-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+/* Mobile & Tablet Adaptations */
+@media (max-width: 768px) {
+  .wfhsa-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 16px;
+  }
+  .wfhsa-container {
+    padding: 16px 12px;
+  }
+  .wfhsa-btn {
+    width: 100%;
+  }
+}
+
+/* Footer */
+.wfhsa-footer {
+  background-color: var(--wfhsa-surface);
+  border-top: 2px solid var(--wfhsa-border);
+  padding: 28px 20px;
+  color: var(--wfhsa-text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Print Styles for Official Audit PDF & Physical Print */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #111827 !important;
+  }
+  .wfhsa-header,
+  .wfhsa-btn,
+  .no-print {
+    display: none !important;
+  }
+  .wfhsa-card {
+    background: #FFFFFF !important;
+    color: #111827 !important;
+    border: 1px solid #D1D5DB !important;
+    box-shadow: none !important;
+  }
+}

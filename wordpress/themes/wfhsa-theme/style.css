@@ -1,0 +1,175 @@
+/*
+Theme Name: WorkForce Health SA
+Theme URI: https://wfhsa.com
+Author: GeekForge / WorkForce Health SA
+Author URI: https://wfhsa.com
+Description: Official modern dark industrial WordPress theme for WORKFORCE HEALTH SA Occupational Hygiene Digital Platform. Designed for South African mining and industrial environments, featuring role-based dashboards, offline-first API synchronization, and glove-friendly mobile UI.
+Version: 1.0.0
+License: Proprietary
+Text Domain: wfhsa-theme
+*/
+
+:root {
+  --wfhsa-red: #D32F2F;
+  --wfhsa-red-dark: #9A0007;
+  --wfhsa-orange: #FF6D00;
+  --wfhsa-bg: #0F1015;
+  --wfhsa-surface: #171922;
+  --wfhsa-surface-variant: #202330;
+  --wfhsa-border: #2E3244;
+  --wfhsa-text: #F8FAFC;
+  --wfhsa-text-muted: #94A3B8;
+  --wfhsa-green: #10B981;
+  --wfhsa-amber: #F59E0B;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--wfhsa-bg);
+  color: var(--wfhsa-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--wfhsa-orange);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wfhsa-header {
+  background-color: var(--wfhsa-surface);
+  border-bottom: 1px solid var(--wfhsa-border);
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.wfhsa-branding {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.wfhsa-branding img {
+  height: 44px;
+  width: auto;
+  border-radius: 8px;
+}
+
+.wfhsa-title {
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+
+.wfhsa-subtitle {
+  font-size: 0.75rem;
+  color: var(--wfhsa-orange);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.wfhsa-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.wfhsa-card {
+  background-color: var(--wfhsa-surface);
+  border: 1px solid var(--wfhsa-border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.wfhsa-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  min-height: 48px;
+}
+
+.wfhsa-btn-primary {
+  background-color: var(--wfhsa-red);
+  color: #FFFFFF;
+}
+
+.wfhsa-btn-primary:hover {
+  background-color: var(--wfhsa-red-dark);
+}
+
+.wfhsa-btn-secondary {
+  background-color: var(--wfhsa-surface-variant);
+  color: var(--wfhsa-text);
+  border: 1px solid var(--wfhsa-border);
+}
+
+.wfhsa-badge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-green { background: rgba(16, 185, 129, 0.18); color: var(--wfhsa-green); border: 1px solid var(--wfhsa-green); }
+.badge-orange { background: rgba(255, 109, 0, 0.18); color: var(--wfhsa-orange); border: 1px solid var(--wfhsa-orange); }
+.badge-red { background: rgba(239, 68, 68, 0.18); color: #EF4444; border: 1px solid #EF4444; }
+
+.wfhsa-footer {
+  border-top: 1px solid var(--wfhsa-border);
+  padding: 30px 20px;
+  text-align: center;
+  color: var(--wfhsa-text-muted);
+  font-size: 0.85rem;
+  background-color: var(--wfhsa-surface);
+  margin-top: 40px;
+}
+
+@media print {
+  body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  .wfhsa-header,
+  .wfhsa-footer,
+  .wfhsa-no-print {
+    display: none !important;
+  }
+  .wfhsa-container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .wfhsa-card {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+}
+

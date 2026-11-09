@@ -1,0 +1,27 @@
+{
+  "content": [
+    {
+      "id": "sec_loc_sel",
+      "elType": "section",
+      "elements": [
+        {
+          "id": "col_loc_sel",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "shortcode_loc",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[portalwfhsa_location_selector]"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

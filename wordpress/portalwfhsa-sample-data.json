@@ -1,0 +1,71 @@
+{
+  "system": "WORKFORCE HEALTH SA",
+  "version": "1.0.0",
+  "endpoint": "https://wfhsa.com/wp-json/wfhsa/v1",
+  "generated_at": "2026-10-30T10:00:00Z",
+  "customers": [
+    {
+      "id": "cust_letaba",
+      "company_name": "Letaba Crushers (Pty) Ltd",
+      "company_code": "LC-014466",
+      "sites": [
+        {
+          "id": "site_letaba_main",
+          "site_name": "Main Quarry & Plant",
+          "location": "Farm Tarentaalrant 24LT, Tzaneen, Limpopo",
+          "mine_code": "14466",
+          "mine_manager": "Pieter Botha (Pr.Eng, GCC)",
+          "site_hygienist": "Riaan Steyn (SAIOH ROH 0482)",
+          "facilities": [
+            {
+              "id": "fac_male_01",
+              "facility_name": "Monthly ablution facilities checklist *Male (Main Change House)",
+              "facility_type": "MALE_ABLUTION",
+              "estimated_users": 145
+            },
+            {
+              "id": "fac_female_01",
+              "facility_name": "Monthly ablution facilities checklist *Female (Admin Complex)",
+              "facility_type": "FEMALE_ABLUTION",
+              "estimated_users": 35
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "email": "assessor@wfhsa.com",
+      "name": "Nomvula Khumalo",
+      "role": "wfhsa_field_assessor",
+      "registration": "SAIOH OH-Asst 1892"
+    },
+    {
+      "email": "hygienist@wfhsa.com",
+      "name": "Riaan Steyn",
+      "role": "wfhsa_hygienist",
+      "registration": "SAIOH ROH 0482"
+    },
+    {
+      "email": "manager@letabacrushers.co.za",
+      "name": "Pieter Botha",
+      "role": "wfhsa_mine_manager",
+      "affiliation": "Letaba Crushers (Pty) Ltd"
+    }
+  ],
+  "recent_assessments": [
+    {
+      "reference_number": "WFH-OH-2026-0042",
+      "customer_id": "cust_letaba",
+      "site_id": "site_letaba_main",
+      "facility_id": "fac_male_01",
+      "compliance_score": 85,
+      "status": "SUBMITTED_FOR_REVIEW",
+      "assessment_date": "2026-10-30",
+      "total_questions": 50,
+      "compliant_items": 43,
+      "action_items": 7
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "content": [
+    {
+      "id": "sec_single_audit",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "top": "20",
+          "bottom": "20",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "col_single_audit",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "audit_header",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Occupational Hygiene Assessment Dossier (28 Pages)",
+                "title_color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "audit_matrix",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[portalwfhsa_reports]"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

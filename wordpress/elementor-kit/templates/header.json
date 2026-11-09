@@ -1,0 +1,70 @@
+{
+  "content": [
+    {
+      "id": "sec_header_01",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#171922",
+        "border_border": "solid",
+        "border_width": {
+          "top": 0,
+          "right": 0,
+          "bottom": 2,
+          "left": 0,
+          "unit": "px"
+        },
+        "border_color": "#D32F2F",
+        "padding": {
+          "top": "14",
+          "bottom": "14",
+          "left": "24",
+          "right": "24",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "col_header_left",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50
+          },
+          "elements": [
+            {
+              "id": "heading_brand",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "PORTAL WFHSA",
+                "header_size": "h2",
+                "title_color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "col_header_right",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50
+          },
+          "elements": [
+            {
+              "id": "nav_menu",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "+ Launch New Inspection",
+                "background_color": "#D32F2F"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "template": "elementor_header_footer"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "content": [
+    {
+      "id": "sec_footer_01",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#171922",
+        "border_border": "solid",
+        "border_width": {
+          "top": 1,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "unit": "px"
+        },
+        "border_color": "#2E3244",
+        "padding": {
+          "top": "20",
+          "bottom": "20",
+          "left": "24",
+          "right": "24",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "col_footer",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "footer_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='color:#94A3B8; text-align:center;'>Work Force Health (Pty) Ltd \u2022 Reg No. 2017/361830/07 \u2022 Mine Health & Safety Act (Act 29 of 1996) \u2022 Synced with https://wfhsa.com/new/</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

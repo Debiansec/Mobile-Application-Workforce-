@@ -1,0 +1,43 @@
+{
+  "content": [
+    {
+      "id": "sec_dash_stats",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "top": "24",
+          "bottom": "24",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "col_dash_stats",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "dash_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Mining Ablution Compliance Dashboard",
+                "title_color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "shortcode_dash",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[portalwfhsa_dashboard]"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

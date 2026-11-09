@@ -1,0 +1,293 @@
+/*
+Theme Name: Portal WFHSA
+Theme URI: https://wfhsa.com/new/
+Author: WorkForce Health SA
+Author URI: https://wfhsa.com
+Description: Official Portal WFHSA Theme Package for WorkForce Health SA Occupational Hygiene & Mining Compliance. Includes native Elementor Kit support, full Elementor theme locations (Header, Footer, Single, Archive), mobile-first responsive audit dashboard, 28-page master template ablution assessment displays, voice-to-text dictation, and GPS coordinates geotagging.
+Version: 1.4.0
+License: Proprietary
+Text Domain: portalwfhsa
+Tags: elementor, elementor-kit, dark, occupational-hygiene, mining-compliance, responsive, dashboard, custom-logo, editor-style
+*/
+
+:root {
+  --wfhsa-red: #D32F2F;
+  --wfhsa-red-dark: #9A0007;
+  --wfhsa-red-light: #FFCDD2;
+  --wfhsa-orange: #FF6D00;
+  --wfhsa-orange-dark: #E65100;
+  --wfhsa-orange-light: #FFE0B2;
+  --wfhsa-bg: #0F1015;
+  --wfhsa-surface: #171922;
+  --wfhsa-surface-variant: #202330;
+  --wfhsa-border: #2E3244;
+  --wfhsa-text: #F8FAFC;
+  --wfhsa-text-muted: #94A3B8;
+  --wfhsa-green: #10B981;
+  --wfhsa-green-dark: #047857;
+  --wfhsa-amber: #F59E0B;
+  --wfhsa-blue: #3B82F6;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--wfhsa-bg);
+  color: var(--wfhsa-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--wfhsa-orange);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #FFA040;
+  text-decoration: underline;
+}
+
+/* Header */
+.portalwfhsa-header {
+  background-color: var(--wfhsa-surface);
+  border-bottom: 2px solid var(--wfhsa-red);
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.portalwfhsa-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.portalwfhsa-logo-mark {
+  background: linear-gradient(135deg, var(--wfhsa-red), var(--wfhsa-orange));
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 1px;
+}
+
+.portalwfhsa-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+}
+
+.portalwfhsa-subtitle {
+  font-size: 0.75rem;
+  color: var(--wfhsa-orange);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.portalwfhsa-nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.portalwfhsa-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.portalwfhsa-badge-green {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: var(--wfhsa-green);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.portalwfhsa-badge-orange {
+  background-color: rgba(255, 109, 0, 0.15);
+  color: var(--wfhsa-orange);
+  border: 1px solid rgba(255, 109, 0, 0.3);
+}
+
+.portalwfhsa-badge-red {
+  background-color: rgba(211, 47, 47, 0.15);
+  color: var(--wfhsa-red);
+  border: 1px solid rgba(211, 47, 47, 0.3);
+}
+
+/* Container */
+.portalwfhsa-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  flex: 1;
+  width: 100%;
+}
+
+/* Card */
+.portalwfhsa-card {
+  background-color: var(--wfhsa-surface);
+  border: 1px solid var(--wfhsa-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.portalwfhsa-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.portalwfhsa-stat-card {
+  background-color: var(--wfhsa-surface);
+  border: 1px solid var(--wfhsa-border);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.portalwfhsa-stat-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--wfhsa-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.portalwfhsa-stat-value {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+
+.portalwfhsa-stat-desc {
+  font-size: 0.75rem;
+  color: var(--wfhsa-text-muted);
+}
+
+/* Buttons */
+.portalwfhsa-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.portalwfhsa-btn-primary {
+  background-color: var(--wfhsa-red);
+  color: #FFFFFF;
+}
+
+.portalwfhsa-btn-primary:hover {
+  background-color: var(--wfhsa-red-dark);
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.portalwfhsa-btn-accent {
+  background-color: var(--wfhsa-orange);
+  color: #FFFFFF;
+}
+
+.portalwfhsa-btn-accent:hover {
+  background-color: var(--wfhsa-orange-dark);
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.portalwfhsa-btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--wfhsa-border);
+  color: var(--wfhsa-text);
+}
+
+.portalwfhsa-btn-outline:hover {
+  background-color: var(--wfhsa-surface-variant);
+  border-color: var(--wfhsa-orange);
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Tables */
+.portalwfhsa-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.portalwfhsa-table th {
+  background-color: var(--wfhsa-surface-variant);
+  color: var(--wfhsa-text-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--wfhsa-border);
+}
+
+.portalwfhsa-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--wfhsa-border);
+  font-size: 0.85rem;
+}
+
+.portalwfhsa-table tr:hover td {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Footer */
+.portalwfhsa-footer {
+  background-color: var(--wfhsa-surface);
+  border-top: 1px solid var(--wfhsa-border);
+  padding: 20px 24px;
+  margin-top: auto;
+  font-size: 0.8rem;
+  color: var(--wfhsa-text-muted);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Elementor Canvas full width support */
+.elementor-template-full-width .portalwfhsa-container {
+  max-width: 100%;
+  padding: 0;
+}

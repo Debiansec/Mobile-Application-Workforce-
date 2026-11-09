@@ -1,0 +1,91 @@
+{
+  "name": "Portal WFHSA \u2014 Mining Ablution & Occupational Hygiene Template Kit",
+  "version": "1.4.0",
+  "author": "WorkForce Health SA",
+  "description": "Comprehensive Elementor Template Kit tailored for South African mining ablution audits, occupational hygiene monitoring, compliance dashboards, and field inspection workflows.",
+  "elementor_version": "3.18.0",
+  "elementor_pro_version": "3.18.0",
+  "templates": [
+    {
+      "id": "header",
+      "title": "Portal WFHSA Header",
+      "type": "header",
+      "thumbnail": "header.jpg",
+      "file": "templates/header.json"
+    },
+    {
+      "id": "footer",
+      "title": "Portal WFHSA Footer",
+      "type": "footer",
+      "thumbnail": "footer.jpg",
+      "file": "templates/footer.json"
+    },
+    {
+      "id": "dashboard",
+      "title": "Inspection Analytics Dashboard",
+      "type": "page",
+      "thumbnail": "dashboard.jpg",
+      "file": "templates/dashboard.json"
+    },
+    {
+      "id": "single-audit",
+      "title": "Single Ablution Inspection Dossier (28 Pages)",
+      "type": "single-post",
+      "thumbnail": "single.jpg",
+      "file": "templates/single-audit.json"
+    },
+    {
+      "id": "location-selector",
+      "title": "Customer & Mine Site Property Selector",
+      "type": "section",
+      "thumbnail": "location.jpg",
+      "file": "templates/location-selector.json"
+    }
+  ],
+  "site_settings": {
+    "colors": [
+      {
+        "id": "wfhsa-primary",
+        "title": "WFHSA Red",
+        "color": "#D32F2F"
+      },
+      {
+        "id": "wfhsa-accent",
+        "title": "WFHSA Orange",
+        "color": "#FF6D00"
+      },
+      {
+        "id": "wfhsa-dark",
+        "title": "WFHSA Dark Bg",
+        "color": "#0F1015"
+      },
+      {
+        "id": "wfhsa-surface",
+        "title": "WFHSA Surface",
+        "color": "#171922"
+      },
+      {
+        "id": "wfhsa-green",
+        "title": "Compliance Green",
+        "color": "#10B981"
+      },
+      {
+        "id": "wfhsa-blue",
+        "title": "GPS Blue",
+        "color": "#3B82F6"
+      }
+    ],
+    "typography": [
+      {
+        "id": "primary",
+        "title": "Primary Font",
+        "font_family": "Roboto"
+      },
+      {
+        "id": "accent",
+        "title": "Accent Font",
+        "font_family": "Inter"
+      }
+    ]
+  }
+}
